@@ -1,0 +1,27 @@
+body {
+    background-color: rgb(110, 4, 4);
+}
+
+.calc-grid {
+    width: 200px;
+}
+
+.btn {
+    width: 40px;
+}
+
+.btn:hover {
+    background-color: rgb(83, 115, 219);
+    color: white;
+}
+
+#ac-btn {
+    width: 80 px;
+    height: 20px;
+}
+
+#output-text {
+    width: 172px;
+    background-color:rgb(224, 198, 198);
+    margin-bottom: 4px;
+}
