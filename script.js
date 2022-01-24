@@ -2,8 +2,9 @@ let buttons = document.querySelectorAll(".btn");
 let outputText = document.querySelector("#output-text");
 
 
-function calculate(input) {
-    return new Function("return" + input)();
+function calculate(event) {
+    console.log("clicked");
+    return new Function("return " + event)();
 }
 
 for (let btn of buttons) {
@@ -59,7 +60,7 @@ for (let btn of buttons) {
                 outputText.innerHTML = calculate(outputText.innerHTML);
                 break;
             case "AC":
-                outputText.innerHTML = "";
+                outputText.innerHTML = "0";
             }
         });
     }
